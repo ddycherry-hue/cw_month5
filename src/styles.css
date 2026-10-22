@@ -1,0 +1,23 @@
+* { box-sizing: border-box; }
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  background: #f5f7fb;
+  font-family: Arial, sans-serif;
+}
+
+.app { min-height: 100vh; display: flex; flex-direction: column; }
+.header { display: flex; align-items: center; gap: 24px; max-width: 1100px; min-height: 68px; margin: 0 auto; padding: 0 16px; width: 100%; }
+.header::before { content: 'GEeks Shop'; margin-right: auto; color: #3867d6; font-size: 20px; font-weight: 700; }
+.header a { color: #555f70; text-decoration: none; }
+.header a:hover, .header a.active { color: #3867d6; }
+main { flex: 1; }
+.app > footer { padding: 20px; border-top: 1px solid #e1e6ee; color: #737d8d; text-align: center; font-size: 13px; }
+
+@media (max-width: 600px) {
+  .header { gap: 13px; }
+  .header::before { font-size: 16px; }
+  .header a { font-size: 12px; }
+}
